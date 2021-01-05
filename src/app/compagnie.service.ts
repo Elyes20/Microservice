@@ -14,16 +14,16 @@ export class CompagnieService {
     return this.http.get(`${this.baseUrl}/getone/${id}`);
   }
 
-  createCompagnie(employee: Object): Observable<Object> {
-    return this.http.post(`${this.baseUrl}/save`, employee);
+  createCompagnie(compagnie: Object): Observable<Object> {
+    return this.http.post(`${this.baseUrl}/save`, compagnie);
   }
 
   updateCompagnie(id: number, value: any): Observable<Object> {
     return this.http.put(`${this.baseUrl}/updateCompagnie/${id}`, value);
   }
 
-  deleteCompagnie(id: number): Observable<any> {
-    return this.http.delete(`${this.baseUrl}/delete/${id}`, { responseType: 'text' });
+  deleteCompagnie(compagnieId: number): Observable<any> {
+    return this.http.delete(`${this.baseUrl}/delete/4`, { responseType: 'text' });
   }
 
   getCompagniesList(): Observable<any> {

@@ -6,6 +6,7 @@
       <table class="table table-striped">
         <thead>
           <tr>
+              <th>Id</th>
             <th>Name</th>
             <th>Pays</th>
             <th>Actions</th>
@@ -13,6 +14,7 @@
         </thead>
         <tbody>
           <tr *ngFor="let compagnie of compagnies | async">
+              <td>{{compagnie.compagnieId}}</td>
             <td>{{compagnie.compagnieName}}</td>
             <td>{{compagnie.compagniePays}}</td>
             <td><button (click)="deleteCompagnie(compagnie.compagnieId)" class="btn btn-danger">Delete</button>
