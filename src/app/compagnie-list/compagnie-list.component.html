@@ -14,7 +14,7 @@
         </thead>
         <tbody>
           <tr *ngFor="let compagnie of compagnies | async">
-              <td>{{compagnie.compagnieId}}</td>
+            <td>{{compagnie.compagnieId}}</td>
             <td>{{compagnie.compagnieName}}</td>
             <td>{{compagnie.compagniePays}}</td>
             <td><button (click)="deleteCompagnie(compagnie.compagnieId)" class="btn btn-danger">Delete</button>

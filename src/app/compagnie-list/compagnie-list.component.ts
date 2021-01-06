@@ -24,11 +24,11 @@ export class CompagnieListComponent implements OnInit {
  deleteCompagnie (compagnieId:number)
  {
    this.compagnieService.deleteCompagnie(compagnieId).subscribe(
-     data=>{
+     (data:any)=>{
        console.log(data);
        this.reloadData();
      },
-     error=> console.log(error));
+     (error:any)=> console.log(error));
    
  }
  compagnieDetails(compagnieId:number)
